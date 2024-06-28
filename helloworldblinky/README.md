@@ -1,1 +1,1 @@
-Simple experimenting and trying to learn Zephyr RTOS.
+Simple experimenting and learning Zephyr RTOS.
