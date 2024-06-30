@@ -11,6 +11,12 @@
     status = "okay";
     pinctrl-0 = <&ledc0_default>;
     pinctrl-names = "default";
+    #address-cells = <1>;
+    #size-cells = <0>;
+    channel0@0 {
+        reg = <0x0>;
+        timer = <0>;
+    };
 };
 
 
