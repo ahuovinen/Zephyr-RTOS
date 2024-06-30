@@ -9,6 +9,18 @@
 
 &ledc0 {
     status = "okay";
+    pinctrl-0 = <&ledc0_default>;
+    pinctrl-names = "default";
+};
+
+
+&pinctrl {
+    ledc0_default: ledc0_default {
+        group1 {
+            pinmux = <LEDC_CH0_GPIO12>;
+            output-enable;
+        };
+    };
 };
 
 
