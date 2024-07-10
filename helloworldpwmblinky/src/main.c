@@ -13,11 +13,11 @@ int main(void)
     LOG_INF("main function started.");
 
     while(true) {
-        pwm_set_pulse_dt(&pwmled, 0);
-        LOG_INF("led off.");
-        k_msleep(1000);
-        pwm_set_pulse_dt(&pwmled, 10000);
+        pwm_set_dt(&pwmled, 10000, 0);
         LOG_INF("led on.");
+        k_msleep(1000);
+        pwm_set_dt(&pwmled, 10000, 10000);
+        LOG_INF("led off.");
         k_msleep(1000);
     }
     return 0;  

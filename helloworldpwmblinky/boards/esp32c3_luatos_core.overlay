@@ -2,11 +2,11 @@
     pwmleds {
         compatible = "pwm-leds";
         pwm_led0: pwm_led0 {
-            pwms = <&ledc0 0 10000 0>;
+            pwms = <&ledc0 0 10000 PWM_POLARITY_INVERTED>;
         };
     };
 };
-
+//3456789012345678901234567890123456
 &ledc0 {
     status = "okay";
     pinctrl-0 = <&ledc0_default>;
